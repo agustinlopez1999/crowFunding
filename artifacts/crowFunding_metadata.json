@@ -11,6 +11,25 @@
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
+					}
+				],
+				"name": "amountToReachTarget",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
@@ -70,11 +89,11 @@
 	},
 	"sources": {
 		"crowfunding.sol": {
-			"keccak256": "0x16ccf0a2acbb8a3dd507abe7f513d7985c847807f2cb631d1cfab58937fa3968",
+			"keccak256": "0x6fea7e89a557b27b0e32d5661c0f4220c1735a419bdd22fd9739fab59cddd166",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ee6d7a1f17c972046c45db991d8f3cebdcab77b37ef01020ae74c66cf2186ed6",
-				"dweb:/ipfs/QmUtxCdNRKw5BMD6xS83myK65rC6UKpw7pxit9cKx4sfks"
+				"bzz-raw://6a0dd5f597f1a8a2160389d43542e8ad13e894cab00b57fcce3f776f2583ec2b",
+				"dweb:/ipfs/QmeZRRZjLPvzguwVwWPmh7xFJvVChEMVJ86ZME6TuZSqtq"
 			]
 		}
 	},

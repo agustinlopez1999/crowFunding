@@ -24,6 +24,12 @@ contract crowFunding{
         return proyect.targetAmount < proyect.collectedAmount + _amount;
     }
 
+    //Returns amount left to reach target
+    function amountToReachTarget(string memory _name) public view returns (uint) {
+        Proyect memory proyect = proyects[_name];
+        return proyect.targetAmount - proyect.collectedAmount;
+    }
+
     //Allows to fund an existing proyect
     function fundProyect(string memory _name, uint _amount) public{
         require(!targetAmountReached(_name, _amount),"TARGET AMOUNT REACHED");
