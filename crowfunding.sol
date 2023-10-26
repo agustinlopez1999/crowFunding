@@ -35,4 +35,12 @@ contract crowFunding{
         require(!targetAmountReached(_name, _amount),"TARGET AMOUNT REACHED");
         proyects[_name].collectedAmount += _amount;
     }
+
+    //Returns proyect name, target and collected
+    function proyectInfo(string memory _name) public view returns(uint, uint, uint){
+        Proyect memory proyect = proyects[_name];
+        return (proyect.Id,proyect.targetAmount,proyect.collectedAmount); 
+    }
+
+     
 }
