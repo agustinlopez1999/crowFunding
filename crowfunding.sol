@@ -24,7 +24,7 @@ contract crowFunding{
     }
 
     //Returns if target amount was reached
-    function targetAmountReached(string memory _name, uint _amount) public view returns (bool) {
+    function targetAmountReached(string memory _name, uint _amount) private view returns (bool) {
         require(proyects[_name].Id != 0, "Project doesn't exists");
         Proyect memory proyect = proyects[_name];
         return proyect.targetAmount < proyect.collectedAmount + _amount;

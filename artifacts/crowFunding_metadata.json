@@ -101,30 +101,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "targetAmountReached",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -155,11 +131,11 @@
 	},
 	"sources": {
 		"crowfunding.sol": {
-			"keccak256": "0xfa9d7889aa790f01d5d8d12132a5c6c35b18e405401b19a40f57ae57512ce71d",
+			"keccak256": "0x793e2e040abca2109a1f08bd81c249f09c2fbc8113492ebe854dffd6552b3758",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4ca12362a790c08f72bdf9d9ac00e9713a766b83fad39e667b36bece2cd8fe65",
-				"dweb:/ipfs/QmW4RURVUFcVzRedmdJJvZscJQgjhhJPLrzHXu7uBvf6Fp"
+				"bzz-raw://136b4ffc1a2f910d7aee61585711a50d253424a153aba207a38d42611c85ad31",
+				"dweb:/ipfs/QmW5GysiXsGixdhZPCcSF7xjwbCQgqwxcPRBoP3mhJVPxj"
 			]
 		}
 	},
