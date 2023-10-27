@@ -43,19 +43,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getProyectsCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -84,9 +71,9 @@
 				"name": "proyectInfo",
 				"outputs": [
 					{
-						"internalType": "bytes32",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bytes32"
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
@@ -131,11 +118,11 @@
 	},
 	"sources": {
 		"crowfunding.sol": {
-			"keccak256": "0x418d7d986e83e9ebaf481087e1234c1da40ec9287deb705681bba7215a992f17",
+			"keccak256": "0xa67082cd1792b401ad559ee60b344ac24e8313e754a9664151c65c27c5bbf49d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://de0ef5eb090100e5ab96e14822dd253239c485127762caaa2376f5dfca35c329",
-				"dweb:/ipfs/QmPF3fzk9ErdF4sYzAhih8Mk4dP4WqPVRHGpqzA1u8Kzry"
+				"bzz-raw://c8be0cb9e80daab36761b649eea510251b4d37be92b7f20b396e0533eb4ea84f",
+				"dweb:/ipfs/QmX7T6F4cotVgFvWnWm5UwSBe69TbjvTBDNqPVTbitogJz"
 			]
 		}
 	},
