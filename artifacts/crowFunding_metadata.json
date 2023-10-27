@@ -43,6 +43,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getProyectsCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -58,6 +71,35 @@
 				"name": "newProyect",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "proyectInfo",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -89,11 +131,11 @@
 	},
 	"sources": {
 		"crowfunding.sol": {
-			"keccak256": "0x6fea7e89a557b27b0e32d5661c0f4220c1735a419bdd22fd9739fab59cddd166",
+			"keccak256": "0x418d7d986e83e9ebaf481087e1234c1da40ec9287deb705681bba7215a992f17",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6a0dd5f597f1a8a2160389d43542e8ad13e894cab00b57fcce3f776f2583ec2b",
-				"dweb:/ipfs/QmeZRRZjLPvzguwVwWPmh7xFJvVChEMVJ86ZME6TuZSqtq"
+				"bzz-raw://de0ef5eb090100e5ab96e14822dd253239c485127762caaa2376f5dfca35c329",
+				"dweb:/ipfs/QmPF3fzk9ErdF4sYzAhih8Mk4dP4WqPVRHGpqzA1u8Kzry"
 			]
 		}
 	},

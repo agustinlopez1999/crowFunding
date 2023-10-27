@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.4;
+pragma experimental ABIEncoderV2;
 
 contract crowFunding{
 
     struct Proyect{
-        uint Id;
+        bytes32 Id;
         string name;
         uint targetAmount;
         uint collectedAmount;
@@ -12,11 +13,15 @@ contract crowFunding{
     uint proyectsCount = 0;
     mapping (string => Proyect) proyects;
 
+    function giveID() private view returns(bytes32){
+        return keccak256(abi.encodePacked(block.timestamp,msg.sender,block.number));
+    }
+
     //Allows to create a new proyect
     function newProyect(string memory _name, uint _target) public{
         require(proyects[_name].Id == 0, "Project with this name already exists");
         proyectsCount++;
-        proyects[_name] = Proyect(proyectsCount,_name,_target, 0);
+        proyects[_name] = Proyect(giveID(),_name,_target, 0);
     }
 
     //Returns if target amount was reached
@@ -40,10 +45,15 @@ contract crowFunding{
     }
 
     //Returns proyect name, target and collected
-    function proyectInfo(string memory _name) public view returns(uint, uint, uint){
+    function proyectInfo(string memory _name) public view returns(bytes32, uint, uint){
         require(proyects[_name].Id != 0, "Project doesn't exists");
         Proyect memory proyect = proyects[_name];
         return (proyect.Id,proyect.targetAmount,proyect.collectedAmount); 
+    }
+
+    //Returns proyects amount
+    function getProyectsCount() public view returns(uint){
+        return proyectsCount;
     }
 
      
