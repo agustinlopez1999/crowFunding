@@ -38,7 +38,7 @@ contract crowFunding{
     }
 
     //Allows to fund an existing proyect
-    function fundProyect(string memory _name, uint _amount) public{
+    function fundProyect(string memory _name, uint _amount) external{
         require(proyects[_name].Id != 0, "Project doesn't exists");
         require(!targetAmountReached(_name, _amount),"TARGET AMOUNT REACHED");
         proyects[_name].collectedAmount += _amount;
