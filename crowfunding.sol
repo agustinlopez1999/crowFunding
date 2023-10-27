@@ -14,6 +14,7 @@ contract crowFunding{
 
     //Allows to create a new proyect
     function newProyect(string memory _name, uint _target) public{
+        require(proyects[_name].Id == 0, "Project with this name already exists");
         proyectsCount++;
         proyects[_name] = Proyect(proyectsCount,_name,_target, 0);
     }
@@ -26,18 +27,21 @@ contract crowFunding{
 
     //Returns amount left to reach target
     function amountToReachTarget(string memory _name) public view returns (uint) {
+        require(proyects[_name].Id != 0, "Project doesn't exists");
         Proyect memory proyect = proyects[_name];
         return proyect.targetAmount - proyect.collectedAmount;
     }
 
     //Allows to fund an existing proyect
     function fundProyect(string memory _name, uint _amount) public{
+        require(proyects[_name].Id != 0, "Project doesn't exists");
         require(!targetAmountReached(_name, _amount),"TARGET AMOUNT REACHED");
         proyects[_name].collectedAmount += _amount;
     }
 
     //Returns proyect name, target and collected
     function proyectInfo(string memory _name) public view returns(uint, uint, uint){
+        require(proyects[_name].Id != 0, "Project doesn't exists");
         Proyect memory proyect = proyects[_name];
         return (proyect.Id,proyect.targetAmount,proyect.collectedAmount); 
     }
