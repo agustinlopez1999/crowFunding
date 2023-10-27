@@ -118,11 +118,11 @@
 	},
 	"sources": {
 		"crowfunding.sol": {
-			"keccak256": "0xa67082cd1792b401ad559ee60b344ac24e8313e754a9664151c65c27c5bbf49d",
+			"keccak256": "0x6abe674ba4eec8e51f560de5ab12581254297b2fa621f9b6207b2a5981e041d8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c8be0cb9e80daab36761b649eea510251b4d37be92b7f20b396e0533eb4ea84f",
-				"dweb:/ipfs/QmX7T6F4cotVgFvWnWm5UwSBe69TbjvTBDNqPVTbitogJz"
+				"bzz-raw://2e1be29a50b506eaa36c6243766a0794110e7e02892a40beb4fac450965f640a",
+				"dweb:/ipfs/QmWCDy2MsrxLprj5LztASMXdQVuLUbCakMfUHvkfWG2VEw"
 			]
 		}
 	},
